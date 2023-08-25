@@ -24,9 +24,9 @@ app.use('/api/v1/admin', require('./routes/adminRoutes'))
 app.use('/api/v1/doctor', require('./routes/doctorRoutes'))
 
 // static files for deployment the project on cyclic.sh
-app.use(express.static(path.join(--dirname,"./client/build")));
+app.use(express.static(path.join(__dirname,"./client/build")));
 app.get("*", function(req , res){
-    res.sendFile(path.join(--dirname,"./client/build/index.html"))
+    res.sendFile(path.join(__dirname,"./client/build/index.html"))
 })
 
 // port
