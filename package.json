@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "node server.js", // Change this line to use 'node' instead of 'nodemon'
+  "start": "node server.js", 
   "comment": "below client and our react file and dev is our concurrently which will be useful to run the front and backend at one command also we need to add proxy in our react package.json file",
   "client": "npm start --prefix ./client",
   "dev": "concurrently \"npm run start\" \"npm run client\""
