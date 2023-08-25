@@ -8,7 +8,7 @@
     "start": "nodemon server.js",
     "comment": "below client and our react file and dev is our concurrently which will be usful to run the front and backend at one command also we need to add proxey in our react package.json file",
     "client": "npm start --prefix ./client",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "keywords": [],
   "author": "Mateen",
